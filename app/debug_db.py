@@ -6,4 +6,8 @@ db = SessionLocal()
 resumes = db.query(Resume).all()
 
 for r in resumes:
-    print(f"Name: {r.name}, Email: {r.email}, Skills: {r.skills}")
+    # Print all fields of the Resume object dynamically
+    for column, value in r.__dict__.items():
+        if column != '_sa_instance_state':  # Avoid printing internal SQLAlchemy state
+            print(f"{column}: {value}")
+    print()  # Adding a new line between records for better readability

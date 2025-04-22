@@ -78,13 +78,13 @@ Before running the app, make sure you have the following:
 
 3. Activate the virtual environment:
    - **Windows:**
-  ```bash
-  .\venv\Scripts\activate
-  ```
+     ```bash
+     .\venv\Scripts\activate
+     ```
    - **Linux/macOS:**
-  ```bash
-  source venv/bin/activate
-  ```
+     ```bash
+     source venv/bin/activate
+     ```
   
 4. Install dependencies:
    ```bash

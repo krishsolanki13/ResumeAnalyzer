@@ -59,18 +59,64 @@ InsightCV supports parsing and evaluating resumes written in the following langu
 
 ## Setup Instructions
 
+### Prerequisites
+Before running the app, make sure you have the following:
+
+1. **Gemini API Key**: You will need a valid Gemini API key to use the app.
+2. **Docker Desktop (if using Docker)**: Make sure Docker Desktop is installed if you plan to run the app using Docker.
+
+### Option 1: Running the App Locally (Without Docker)
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/krishsolanki13/ResumeAnalyzer.git
    cd ResumeAnalyzer
 
-2. Install dependencies:
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+
+3. Activate the virtual environment:
+   - **Windows:**
+  ```bash
+  .\venv\Scripts\activate
+
+   - **Linux/macOS**
+  ```bash
+  source venv/bin/activate
+  
+4. Install dependencies:
    ```bash
    pip install -r requirements.txt
 
-3. Run the application:
+5. Create a .env file in the project root directory and add the following line with your Gemini API key
+   ```ini
+   GEMINI_API_KEY=your_api_key_here
+
+6. Run the application:
    ```bash
-   streamlit run main.py
+   streamlit run frontend/main.py
+
+7. Access the app:
+   Open your browser and go to [http://localhost:8501](http://localhost:8501).
+
+### Option 2: Running the App Using Docker
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/krishsolanki13/ResumeAnalyzer.git
+   cd ResumeAnalyzer
+
+2. Build the Docker image:
+   ```bash
+   docker build -t insightcv .
+
+3. Run the application with database persistence:
+   ```bash
+   docker run -p 8501:8501 -v ${PWD}/data:/app/data -e GEMINI_API_KEY=your_api_key_here insightcv
+
+4. Access the app: 
+   Open your browser and go to [http://localhost:8501](http://localhost:8501).
 
 ## Folder Structure
 

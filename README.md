@@ -74,6 +74,7 @@ InsightCV supports parsing and evaluating resumes written in the following langu
 
 ## Folder Structure
 
+```plaintext
 InsightCV/
 │
 ├── app/
@@ -112,6 +113,8 @@ InsightCV/
 ├── test_env.py
 ├── test_gemini.py
 └── init_db.py
+```
+
 
 ## Contributors
 

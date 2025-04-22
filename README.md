@@ -99,7 +99,7 @@ Before running the app, make sure you have the following:
    streamlit run frontend/main.py
 
 7. Access the app:
-      Open your browser and go to [http://localhost:8501](http://localhost:8501).
+   Open your browser and go to [http://localhost:8501](http://localhost:8501).
 
 ### Option 2: Running the App Using Docker
 
@@ -116,8 +116,8 @@ Before running the app, make sure you have the following:
    ```bash
    docker run -p 8501:8501 -v ${PWD}/data:/app/data -e GEMINI_API_KEY=your_api_key_here insightcv
 
-4. Access the app: 
-      Open your browser and go to [http://localhost:8501](http://localhost:8501).
+4. Access the app:
+   Open your browser and go to [http://localhost:8501](http://localhost:8501).
 
 ## Folder Structure
 

@@ -81,7 +81,6 @@ Before running the app, make sure you have the following:
   ```bash
   .\venv\Scripts\activate
   ```
-
    - **Linux/macOS:**
   ```bash
   source venv/bin/activate

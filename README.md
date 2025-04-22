@@ -82,7 +82,7 @@ Before running the app, make sure you have the following:
   .\venv\Scripts\activate
   ```
 
-   - **Linux/macOS**
+   - **Linux/macOS:**
   ```bash
   source venv/bin/activate
   ```

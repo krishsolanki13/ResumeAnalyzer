@@ -80,10 +80,12 @@ Before running the app, make sure you have the following:
    - **Windows:**
   ```bash
   .\venv\Scripts\activate
+  ```
 
    - **Linux/macOS**
   ```bash
   source venv/bin/activate
+  ```
   
 4. Install dependencies:
    ```bash

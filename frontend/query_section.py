@@ -1,3 +1,5 @@
+#frontend/query_section.py
+
 import streamlit as st
 from app.resume_operations import query_resumes
 import pandas as pd

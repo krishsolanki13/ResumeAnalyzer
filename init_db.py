@@ -1,4 +1,4 @@
-# init_db.py
+#init_db.py
 
 from app.db import engine  
 from app.base import Base  

@@ -1,3 +1,5 @@
+#app/clear_data.py
+
 from app.db import SessionLocal
 from models.resume_model import Resume
 

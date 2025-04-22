@@ -1,3 +1,5 @@
+#frontend/main.py
+
 import streamlit as st
 import sys
 import os
@@ -6,10 +8,10 @@ from upload_section import handle_resume_upload
 from query_section import show_query_section
 
 # Set up the Streamlit page layout
-st.set_page_config(page_title="Resume Extractor", layout="wide")
+st.set_page_config(page_title="InsightCV", layout="wide")
 
 # Display a title and description
-st.title("Resume Extractor")
+st.title("InsightCV")
 st.write("Upload a resume (PDF or DOCX), and we will extract key information from it.")
 
 # Use session state to keep track of the current page
